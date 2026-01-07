@@ -1,4 +1,4 @@
-module github.com/facelessEmptiness/Assignment2_testing
+module github.com/facelessEmptiness/Assignment2_testing2
 
 go 1.23
 
