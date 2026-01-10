@@ -1,4 +1,4 @@
-package main
+package pages
 
 import (
 	"fmt"
@@ -40,19 +40,19 @@ func main() {
 
 	// ============ СТРАНИЦА 1: Home Page ============
 	fmt.Println("=== Page 1: Home Page ===")
-	homePage := NewBooking(wd)
+	homePage := NewBookingPage(wd)
 
-	if err := homePage.SelectDepartureCityBtn("Paris"); err != nil {
+	if err := homePage.SelectDepartureCity("Paris"); err != nil {
 		log.Printf("Error: %v", err)
 		return
 	}
 
-	if err := homePage.SelectDestinationCityBtn("London"); err != nil {
+	if err := homePage.SelectDestinationCity("London"); err != nil {
 		log.Printf("Error: %v", err)
 		return
 	}
 
-	if err := homePage.clickFindFlights(); err != nil {
+	if err := homePage.ClickFindFlights(); err != nil {
 		log.Printf("Error: %v", err)
 		return
 	}

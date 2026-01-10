@@ -349,5 +349,5 @@ func runDemoTests() {
 	fmt.Println("1. Download selenium-server-standalone.jar")
 	fmt.Println("2. Download chromedriver")
 	fmt.Println("3. Install: go get github.com/tebeka/selenium")
-	fmt.Println("4. Run: go run main.go")
+	fmt.Println("4. Run: go run pages.go")
 }
